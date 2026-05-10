@@ -511,10 +511,11 @@ button {
   transform: scale(1.05);
 }
 
-.linux-os-btn {
+.linux-btn {
   position: fixed;
-  top: 60px;
-  right: 20px;
+  bottom: 90px;   /* distance from bottom */
+  left: 20px;     /* move to left side */
+  z-index: 9999;  /* makes sure it stays above everything */
 
   padding: 12px 22px;
 
