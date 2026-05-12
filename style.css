@@ -503,22 +503,24 @@ button {
 
 .whatsapp-float-text {
   position: fixed;
-  bottom: 25px;
+  bottom: 55px;
   right: 20px;
 
   display: flex;
   align-items: center;
   gap: 6px;
 
-  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  background: transparent;
   padding: 10px 14px;
 
   border-radius: 30px;
 
   text-decoration: underline;
-  color: white;
+  color: #eaeaea;
+  text-shadow: 0 2px 6px
+  rgba(0,0,0,0.7);
 
-  font-weight: bold;
+  font-weight: 800;
   font-size: 14px;
 
   z-index: 9999;
@@ -534,5 +536,53 @@ button {
 }
 
 .whatsapp-float-text:hover {
+  transform: scale(1.05);
+}
+
+/* INSTAGRAM FIX ABOVE EVERYTHING */
+.INSTAGRAM-float,
+.INSTAGRAM-text {
+  z-index: 10001;
+}
+
+/* =========================
+   SMALL INSTAGRAM + TEXT BUTTON
+   ========================= */
+
+.INSTAGRAM-float-text {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  background: transparent;
+  padding: 10px 14px;
+
+  border-radius: 30px;
+
+  text-decoration: underline;
+  color: #eaeaea;
+  text-shadow: 0 2px 6px
+  rgba(0,0,0,0.7);
+
+  font-weight: 800;
+  font-size: 14px;
+
+  z-index: 9999;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+
+  transition: 0.3s ease;
+}
+
+.INSTAGRAM-float-text img {
+  width: 22px;
+  height: 22px;
+}
+
+.INSTAGRAM-float-text:hover {
   transform: scale(1.05);
 }
