@@ -508,15 +508,15 @@ button {
 
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
 
-  background: transparent;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
   padding: 10px 14px;
 
   border-radius: 30px;
 
   text-decoration: underline;
-  color: green;
+  color: white;
 
   font-weight: bold;
   font-size: 14px;
