@@ -465,8 +465,8 @@ button {
 
 .INSTAGRAM-float-text {
   position: fixed;
-  bottom: 50px;
-  right: 20px;
+  bottom: 45px;
+  right: 15px;
 
   display: flex;
   align-items: center;
