@@ -223,6 +223,14 @@ button {
 .Linux-btn {
   background: linear-gradient(135deg, #00ff88, #0072ff);
   color: white;
+ dim-button {
+  opacity: 0.25;   /* dim / transparent */
+  transition: 0.3s ease;
+}
+
+ dim-button:hover {
+  opacity: 1;      /* fully visible on hover */
+}
 }
 
 .Linux-btn:hover {
