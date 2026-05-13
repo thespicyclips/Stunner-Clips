@@ -63,38 +63,6 @@ body {
   box-shadow: 0 8px 18px rgba(0, 114, 255, 0.4);
 }
 
-.linux-btn {
- 
-  padding: 12px 22px;
-
-  background: linear-gradient(135deg, #00ff88, #0072ff);
-
-  color: white;
-
-  border: none;
-
-  border-radius: 14px;
-
-  font-size: 14px;
-
-  font-weight: bold;
-
-  letter-spacing: 1px;
-
-  cursor: pointer;
-
-  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
-
-  transition: 0.3s ease;
-
-  ,margin: 10px 0 10px 20px; /* controls position under linux */
-} 
-
-.linux-os-btn:hover {
- transform: scale(1.03);
-  box-shadow: 0 8px 18px rgba(0, 114, 255, 0.4);
-}
-
 /* =========================
    HERO SECTION
    ========================= */
@@ -217,23 +185,6 @@ button {
 }
 
 .owner-btn:hover {
-  transform: scale(1.05);
-}
-
-.Linux-btn {
-  background: linear-gradient(135deg, #00ff88, #0072ff);
-  color: white;
- dim-button {
-  opacity: 0.25;   /* dim / transparent */
-  transition: 0.3s ease;
-}
-
- dim-button:hover {
-  opacity: 1;      /* fully visible on hover */
-}
-}
-
-.Linux-btn:hover {
   transform: scale(1.05);
 }
 
@@ -500,51 +451,6 @@ button {
 }
 
 /* WHATSAPP FIX ABOVE EVERYTHING */
-.whatsapp-float,
-.whatsapp-text {
-  z-index: 10001;
-}
-
-/* =========================
-   SMALL WHATSAPP + TEXT BUTTON
-   ========================= */
-
-.whatsapp-float-text {
-  position: fixed;
-  bottom: 55px;
-  right: 20px;
-
-  display: flex;
-  align-items: center;
-  gap: 6px;
-
-  background: transparent;
-  padding: 10px 14px;
-
-  border-radius: 30px;
-
-  text-decoration: underline;
-  color: #00c6ff;
-  text-shadow: 0 2px 6px
-  rgba(0,0,0,0.7);
-
-  font-weight: 800;
-  font-size: 14px;
-
-  z-index: 9999;
-
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-
-  transition: 0.3s ease;
-}
-
-.whatsapp-float-text img {
-  width: 22px;
-  height: 22px;
-}
-
-.whatsapp-float-text:hover {
-  transform: scale(1.05);
 }
 
 /* INSTAGRAM FIX ABOVE EVERYTHING */
@@ -559,7 +465,7 @@ button {
 
 .INSTAGRAM-float-text {
   position: fixed;
-  bottom: 20px;
+  bottom: 60px;
   right: 20px;
 
   display: flex;
@@ -592,5 +498,39 @@ button {
 }
 
 .INSTAGRAM-float-text:hover {
+  transform: scale(1.05);
+}
+
+.lnx-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-family: "Courier New", monospace;
+  text-decoration: none;
+
+  color: #00ff88;
+  background: rgba(0, 0, 0, 0.85);
+
+  border: 2px solid #00ff88;
+  border-radius: 6px;
+
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  box-shadow: 0 0 10px #00ff88, 0 0 20px #00ff88 inset;
+
+  transition: 0.3s ease;
+  z-index: 9999; /* keeps it above everything */
+}
+
+/* hover effect */
+.lnx-btn:hover {
+  background: #00ff88;
+  color: black;
+  box-shadow: 0 0 25px #00ff88, 0 0 50px #00ff88;
   transform: scale(1.05);
 }
